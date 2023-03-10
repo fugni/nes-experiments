@@ -1,0 +1,5 @@
+{
+  "executable": "C:\\cc65\\bin\\cl65",
+  "input": "meow.s",
+  "params": "--verbose --target nes -o meow.nes"
+}
