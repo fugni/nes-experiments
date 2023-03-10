@@ -81,29 +81,29 @@ forever:
 nmi:
   ldx #$00 	; Set SPR-RAM address to 0
   stx $2003
-@loop:	lda meow, x  ; Load the message into SPR-RAM
+@loop:	lda gorinchem, x  ; Load the message into SPR-RAM
   sta $2004
   inx
   cpx #$1c
-  bne @loop
+  bvc @loop
   rti
 
 gorinchem:
-  .byte $6c, $04, $00, $58 ; G
-  .byte $6c, $02, $00, $62 ; O
-  .byte $6c, $05, $00, $6c ; R
-  .byte $6c, $06, $00, $76 ; I
-  .byte $6c, $07, $00, $80 ; N
+  .byte $1c, $04, $00, $58 ; G
+  .byte $2c, $02, $00, $62 ; O
+  .byte $3c, $05, $00, $6c ; R
+  .byte $4c, $06, $00, $76 ; I
+  .byte $5c, $07, $00, $80 ; N
   .byte $6c, $08, $00, $8A ; C
-  .byte $6c, $09, $00, $94 ; H
-  .byte $6c, $01, $00, $9E ; E
-  .byte $6c, $00, $00, $A8 ; M
+  .byte $7c, $09, $00, $94 ; H 
+  .byte $8c, $01, $00, $9E ; E
+  .byte $9c, $00, $00, $A8 ; M WHAT IS YOUR PROBLEM
 
-meow:
-  .byte $6c, $00, $00, $6c ; M
-  .byte $6c, $01, $00, $76 ; E
-  .byte $6c, $02, $00, $80 ; O
-  .byte $6c, $03, $00, $8A ; W
+; meow:
+;   .byte $6c, $00, $00, $6c ; M
+;   .byte $6c, $01, $00, $76 ; E
+;   .byte $6c, $02, $00, $80 ; O
+;   .byte $6c, $03, $00, $8A ; W
 
 palettes:
   ; Background Palette
