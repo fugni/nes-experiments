@@ -1,0 +1,5 @@
+{
+  "executable": "C:\\cc65\\bin\\cl65",
+  "input": "rainbow.s",
+  "params": "--verbose --target nes -o rainbow.nes"
+}

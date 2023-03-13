@@ -97,7 +97,7 @@ gorinchem:
   .byte $6e, $08, $00, $8A ; C
   .byte $78, $09, $00, $94 ; H 
   .byte $82, $01, $00, $9E ; E
-  .byte $8c, $00, $00, $A8 ; M WHAT IS YOUR PROBLEM
+  .byte $8c, $00, $00, $A8 ; M
 
 ; meow:
 ;   .byte $6c, $00, $00, $6c ; M
